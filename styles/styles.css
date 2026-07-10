@@ -33,7 +33,7 @@ main {
     width: 200px;
     margin: 1rem;
     padding: 1px;
-    border: 1px solid rgb(0, 0, 0/20%);
+    border: 1px solid rgb(0, 0, 0/0.2);
     background-color: rgb(223, 225, 230);
     color: #333;
     font-size: .8rem;
@@ -41,7 +41,7 @@ main {
 }
 
 <aside img {
-    width: 200%;
+    width: 200px;
     height: auto;
 }
 
@@ -50,6 +50,7 @@ main img {
     height: auto;
     padding: 1px rgb(0, 0, 0);
     box-shadow: 0 0 30px gray;
+    border-radius: 50%;
 }
 
 footer {
