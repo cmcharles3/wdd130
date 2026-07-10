@@ -1,5 +1,18 @@
+main {
+    max-width: 840px
+}
+
+<aside {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid rgb(0, 0, 0/20%);
+    background-color: rgb(223, 225, 230);
+    font-size: .8rem;
+}
+
 nav {
-    background-color: darkblue;
+    background-color: rgb(2, 0, 139);
     padding: 10px;
 }
 
@@ -16,7 +29,7 @@ h1 {
 img {
     width: 150px;
     height: auto;
-    padding: 1px solid black;
+    padding: 1px solid rgb(0, 0, 0);
     box-shadow: 0 0 30px gray;
 }
 
