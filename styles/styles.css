@@ -1,6 +1,20 @@
+/* Defining CSS Variables inside :root selector.  */
+:root {
+    --primary-color: rgb(2, 0, 139);
+    --heading-color: darkblue;
+    --bg-light: rgb(223, 225, 230);
+    --border-color: rgba(0, 0, 0, 0.2);
 
+    --image-width-small: 150px;
+    --image-width-large: 200px;
+    --thin-spacing: 1px;
+
+    --image-shadow: 0 0 30px gray;
+}
+
+/* Replacing repeated values using var() */
 nav {
-    background-color: rgb(2, 0, 139);
+    background-color: var(--primary-color);
     padding: 10px;
 }
 
@@ -11,14 +25,14 @@ nav a {
 }
 
 h1 {
-    color: darkblue;
+    color: var(--heading-color);
 }
 
 img {
-    width: 150px;
+    width: var(--image-width-small);
     height: auto;
-    padding: 1px;
-    box-shadow: 0 0 30px gray;
+    padding: var(--thin-spacing);
+    box-shadow: var(--image-shadow);
 }
 
 p {
@@ -30,27 +44,27 @@ main {
 }
 
 aside {
-    width: 200px;
+    width: var(--image-width-large);
     margin: 1rem;
-    padding: 1px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    background-color: rgb(223, 225, 230);
+    padding: var(--thin-spacing);
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-light);
     color: #333;
     font-size: .8rem;
     text-align: center;
 }
 
 aside img {
-    width: 200px;
+    width: var(--image-width-large);
     height: auto;
 }
 
 main img {
-    width: 150px;
+    width: var(--image-width-small);
     height: auto;
-    padding: 1px;
-    box-shadow: 0 0 30px gray;
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: var(--thin-spacing);
+    box-shadow: var(--image-shadow);
+    border: 1px solid var(--border-color);
 }
 
 footer {
