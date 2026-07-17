@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Defining CSS Variables inside :root selector.  */
 :root {
     --primary-color: rgb(2, 0, 139);
@@ -43,32 +49,47 @@ main {
     max-width: 840px;
 }
 
+/* Make sure your aside acts as the anchor point for absolute positioning */
 aside {
-    width: var(--image-width-large);
-    margin: 1rem;
-    padding: var(--thin-spacing);
-    border: 1px solid var(--border-color);
-    background-color: var(--bg-light);
-    color: #333;
-    font-size: .8rem;
+    width: 20em;
     text-align: center;
+    position: relative;
+    /* CRITICAL: This keeps the h2 inside the box */
 }
 
-aside img {
-    width: var(--image-width-large);
-    height: auto;
+/* absolute positioning for the heading overlay */
+aside h2 {
+    position: absolute;
+    top: 47px;
+    /* Adjust these pixel numbers if needed to make it look right on your image */
+    left: 150px;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Optional tip: adds readability over an image */
 }
 
+/* Float your profile image to the right */
 main img {
-    width: var(--image-width-small);
-    height: auto;
-    padding: var(--thin-spacing);
-    box-shadow: var(--image-shadow);
-    border: 1px solid var(--border-color);
+    float: right;
+    margin-left: 1rem;
+    /* Optional tip: keeps text from bumping directly into the image */
+}
+
+.profile-image {
+    float: right;
+    margin: 0 0 1rem 1rem;
 }
 
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
+}
+
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    padding: 1rem;
+    backgroung-color: #f0f4f8;
+    color: #1a2a3a;
+    border: 1px solid #b0c4de;
 }
