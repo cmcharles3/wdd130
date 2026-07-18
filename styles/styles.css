@@ -6,7 +6,7 @@
 
 /* Defining CSS Variables inside :root selector.  */
 :root {
-    --primary-color: rgb(2, 0, 139);
+    --primary-color: rgb(0, 49, 139);
     --heading-color: darkblue;
     --bg-light: rgb(223, 225, 230);
     --border-color: rgba(0, 0, 0, 0.2);
@@ -49,7 +49,6 @@ main {
     max-width: 840px;
 }
 
-/* Make sure your aside acts as the anchor point for absolute positioning */
 aside {
     width: 20em;
     text-align: center;
@@ -61,7 +60,7 @@ aside {
 aside h2 {
     position: absolute;
     top: 47px;
-    /* Adjust these pixel numbers if needed to make it look right on your image */
+
     left: 150px;
     background-color: rgba(255, 255, 255, 0.8);
     /* Optional tip: adds readability over an image */
