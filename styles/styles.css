@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body {
+    font-size: 16px;
+    font-family: Roboto, Condensed, Arial, Helvetica, sans-serif;
+}
+
 /* Defining CSS Variables inside :root selector.  */
 :root {
     --primary-color: rgb(0, 49, 139);
@@ -71,6 +76,10 @@ main img {
     /* keeps text from bumping directly into the image */
 }
 
+p {
+    margin: 1rem;
+}
+
 .profile-image {
     float: right;
     margin: 0 0 1rem 1rem;
@@ -89,4 +98,8 @@ footer {
     background-color: #f0f4f8;
     color: #1a2a3a;
     border: 1px solid #b0c4de;
+}
+
+.indent {
+    padding-left: 2rem;
 }
