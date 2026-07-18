@@ -53,7 +53,6 @@ aside {
     width: 20em;
     text-align: center;
     position: relative;
-    /* CRITICAL: This keeps the h2 inside the box */
 }
 
 /* absolute positioning for the heading overlay */
@@ -63,14 +62,13 @@ aside h2 {
 
     left: 150px;
     background-color: rgba(255, 255, 255, 0.8);
-    /* Optional tip: adds readability over an image */
 }
 
 /* Float your profile image to the right */
 main img {
     float: right;
     margin-left: 1rem;
-    /* Optional tip: keeps text from bumping directly into the image */
+    /* keeps text from bumping directly into the image */
 }
 
 .profile-image {
