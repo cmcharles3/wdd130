@@ -64,7 +64,7 @@ aside h2 {
     background-color: rgba(255, 255, 255, 0.8);
 }
 
-/* Float your profile image to the right */
+/* Floating profile image to the right */
 main img {
     float: right;
     margin-left: 1rem;
