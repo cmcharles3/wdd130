@@ -1,0 +1,165 @@
+/* Define CSS variables */
+:root {
+    --primary-color: #055a05;
+    /* forest green */
+    --secondary-color: #f4a261;
+    /* warm sand */
+    --accent1-color: #264653;
+    /* dark slate blue */
+    --accent2-color: #e9c46a;
+    /* light golden yellow */
+    --heading-font: "Times New Roman", "Georgia", serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+/* 4.Reset CSS box-model properties */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 5.body-font */
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+    background-color: #fcfcfc;
+}
+
+/* 6. Page limitation and alignment */
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+/* 7.Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 16px;
+    background-color: var(--primary-color);
+}
+
+header img {
+    max-height: 70px;
+    width: auto;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: var(--secondary-color);
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+/* 8.basic style */
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* Footer & Social Media Icon Configuration */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--accent1-color);
+    color: #fff;
+    padding: 10px 16px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 24px;
+    height: 24px;
+}
+
+/* --- div style --- */
+
+.hero {
+    position: relative;
+    margin: 0;
+
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Styling h1*/
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.85;
+    background-color: var(--accent1-color);
+    color: #fff;
+}
+
+/* Article */
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 4px;
+    padding: 15px;
+    margin: 0;
+}
+
+.hero article p {
+    color: #111;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* image */
+.hero article img {
+    float: right;
+    width: 125px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    border: 3px solid var(--primary-color);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
