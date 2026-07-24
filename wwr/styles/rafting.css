@@ -34,18 +34,38 @@ footer {
     margin: 0 auto;
 }
 
-/* 7.Header Styling */
+/* 7.Header Styling 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 16px;
     background-color: var(--primary-color);
+} */
+/* --CSS grid -logo & nav --*/
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 1 rem 2rem;
+    backgroung-color: #2b3a42;
+    color: #fff;
 }
 
+/* --
 header img {
     max-height: 70px;
     width: auto;
+} --*/
+header img {
+    width: 80px;
+    height: auto;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
 }
 
 header nav ul {
@@ -60,8 +80,12 @@ header nav a {
     font-weight: bold;
 }
 
+/* --
 header nav a:hover {
     color: var(--secondary-color);
+} -- */
+header nav a:hover {
+    text-decoration: underline;
 }
 
 h1,
@@ -79,6 +103,28 @@ article {
     padding: 8px;
 }
 
+/* -- Adventure section; horizontal 5 image span -- */
+.adventure-gallery {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+.adventure-gallery figure {
+    flex: 1 1 18%;
+    /* --5 columns distributed evenly -- */
+    text-align: center;
+    margin: 0;
+}
+
+.adventure-gallery figcaption {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    font-weight: 600;
+}
+
 /* Footer & Social Media Icon Configuration */
 footer {
     display: flex;
@@ -86,8 +132,19 @@ footer {
     align-items: center;
     background-color: var(--accent1-color);
     color: #fff;
-    padding: 10px 16px;
+    /* padding: 10px 16px; */
+    padding: 1.5rem 2rem;
     margin-top: 30px;
+}
+
+footer .social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+footer .social-links img {
+    width: 24px;
+    height: 24px;
 }
 
 footer p {
