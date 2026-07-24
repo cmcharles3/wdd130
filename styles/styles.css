@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+header,
+.grid,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
 body {
     font-size: 16px;
     font-family: Roboto, Condensed, Arial, Helvetica, sans-serif;
@@ -25,18 +32,32 @@ body {
 
 /* Replacing repeated values using var() */
 nav {
-    background-color: var(--primary-color);
-    padding: 10px;
+    /* background-color: var(--primary-color); */
+    /* padding: 10px; */
+    background-color: steelblue;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-nav a {
+/* nav a {
     color: white;
     display: block;
-    padding: 20px;
+    padding: 20px; */
+nav a {
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;/% shorthand for white %/
 }
 
 h1 {
-    color: var(--heading-color);
+    /* color: var(--heading-color); */
+    border-bottom: 2px solid steelblue;
+    padding-bottom: 0.5rem;
 }
 
 img {
@@ -50,14 +71,24 @@ p {
     padding: 0px;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: 20rem 1fr;
+    align-items: center;
+}
+
 main {
-    max-width: 840px;
+    /* max-width: 840px; */
+    grid-column: 2/3;
+    margin: 1rem;
 }
 
 aside {
-    width: 20em;
-    text-align: center;
+    width: 20rem;
+    /* text-align: center; */
     position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 /* absolute positioning for the heading overlay */
