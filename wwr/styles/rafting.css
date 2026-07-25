@@ -100,13 +100,10 @@ article {
     padding: 8px;
 }
 
-*/ .history h2 {
+.history h2 {
     text-align: center;
-    margin-top: 20px;
     margin-bottom: 20px;
     color: #004d25;
-    padding: 40px 20px;
-
 }
 
 .history-content {
