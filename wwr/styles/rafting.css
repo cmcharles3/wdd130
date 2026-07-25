@@ -6,7 +6,7 @@
     /* warm sand */
     --accent1-color: #264653;
     /* dark slate blue */
-    --accent2-color: #e9c46a;
+    /*--accent2-color: #e9c46a;
     /* light golden yellow */
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
@@ -102,21 +102,7 @@ article {
     padding: 8px;
 }
 
-/*
-.history-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* Centers items horizontally */
-text-align: center;
-/* Centers the text content inside the paragraph */
-max-width: 800px;
-margin: 40px auto;
-/* Centers the section on the page with vertical space */
-padding: 0 20px;
-}
-
-.history h2 {
+*/ .history h2 {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -135,9 +121,10 @@ padding: 0 20px;
 }
 
 .history-content img {
-    width: 200;
+    width: 200px;
     height: auto;
     display: block;
+    border-radius: 6px;
 }
 
 .history-content p {
