@@ -41,16 +41,8 @@ header {
     align-items: center;
     padding: 10px 16px;
     background-color: var(--primary-color);
-}
-
-/* --CSS grid -logo & nav -- */
-header {
-    display: grid;
-    grid-template-columns: auto 1fr;
     align-items: center;
-    padding: 1 rem 2rem;
-    backgroung-color: #2b3a42;
-    color: #fff;
+
 }
 
 header img {
