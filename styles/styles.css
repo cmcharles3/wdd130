@@ -102,7 +102,7 @@ aside h2 {
 
 /* Floating profile image to the right */
 main img {
-    float: right;
+    float: left;
     margin-left: 1rem;
     /* keeps text from bumping directly into the image */
 }
