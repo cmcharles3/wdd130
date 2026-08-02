@@ -10,7 +10,7 @@
 header,
 .grid,
 footer {
-    max-width: 840px;
+    max-width: auto;
     margin: 0 auto;
 }
 
@@ -120,7 +120,7 @@ p {
 }
 
 footer {
-    max-height: 100px;
+
     max-width: auto;
     margin-top: 15px;
     border-top: 1px solid #000;
