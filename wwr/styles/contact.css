@@ -281,7 +281,10 @@ footer p {
 
 }
 
-===================================CONTACT US PAGE STYLES===================================*/ .page-title {
+/*===================================
+CONTACT US PAGE STYLES
+===================================*/
+.page-title {
     text-align: center;
     margin: 20px 0 10px;
     font-size: 2.2rem;
