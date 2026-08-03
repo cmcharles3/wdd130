@@ -15,12 +15,10 @@ body {
 /* Header Styling */
 header {
     margin-bottom: 20px;
-    padding-left: 10px;
 }
 
 header h1 {
     color: #000066;
-    /* Deep navy blue */
     font-size: 1.8rem;
     font-family: Georgia, serif;
 }
@@ -42,7 +40,6 @@ form {
 }
 
 /* Question Group Layout */
-.question-group,
 .quiz-item {
     display: flex;
     flex-direction: column;
@@ -56,20 +53,15 @@ label {
     font-family: Georgia, serif;
 }
 
-/* Question Numbers Coloring */
-label::first-letter,
-.question-group label span {
-    color: #000080;
-}
-
 code {
     background-color: #2b2b2b;
     color: #ffffff;
-    padding: 10px 200px;
+    padding: 8px 12px;
     font-family: monospace;
     font-size: 0.95rem;
     border-radius: 2px;
     width: fit-content;
+    margin-bottom: 4px;
 }
 
 /* Form Inputs Styling */
@@ -97,12 +89,11 @@ select:focus {
 
 /* Submit Button Styling */
 .button-group {
-    margin: 10px 5px 15px;
+    margin-top: 10px;
 }
 
 button[type="submit"] {
     background-color: #000080;
-    /* Deep blue button */
     color: white;
     border: none;
     padding: 14px 25px;

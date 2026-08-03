@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Quiz Form</title>
+    <title>Basic HTML and CSS Quiz</title>
     <link rel="stylesheet" href="styles/quiz.css">
 </head>
 
@@ -24,7 +24,7 @@
             </div>
             <div class="quiz-item">
                 <label for="q3">3. Which of the following is a valid CSS comment?</label>
-                <select id="q3" name="q3">
+                <select id="q3" name="q3" required>
                     <option value="" selected disabled>Choose One ...</option>
                     <option value="a">A. &lt;!-- This is a comment --&gt;</option>
                     <option value="b">B. /* This is a comment */</option>
@@ -34,7 +34,7 @@
             <div class="quiz-item">
                 <label for="q4">4. What is the bottom margin given this declaration?</label>
                 <code>margin: 10px 5px 15px;</code>
-                <input type="number" id="q4" name="q4">
+                <input type="number" id="q4" name="q4" required>
             </div>
             <div class="button-group">
                 <button type="submit">Submit Quiz</button>
