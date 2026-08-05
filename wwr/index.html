@@ -4,15 +4,17 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>White Water Rafting | Home</title>
+    <meta name="author" content="Charles Chiparo">
+    <title>White Water Rafting | Trips</title>
     <meta name="description"
-      content="Welcome to Whitewater Adventures - your premier white water rafting company offering thrilling river trips, guided expeditions, and unforgettable outdoor experiences.">
+      content="Welcome to Whitewater Adventures - your white water rafting company offering thrilling unforgettable outdoor experiences.">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
     <header>
-        <img src="images/rapidssplash.jpg" alt="Rapids Splash Logo" width="150" height="90">
+        <div>
+            <img src="images/rapidssplash.jpg" alt="Rapids Splash Logo" width="150" height="90">
         </div>
         <nav>
             <ul>
@@ -47,6 +49,29 @@
                       placeholder="jane@example.com">
                 </div>
                 <button type="submit" class="btn-submit">Subscribe Now</button>
+
+                <!-- 3 Radio Buttons -->
+                <fieldset>
+                    <legend>Select your preferred communication method:</legend>
+                    <label><input type="radio" name="contact" value="email"> Email</label>
+                    <label><input type="radio" name="contact" value="phone"> Phone</label>
+                    <label><input type="radio" name="contact" value="sms"> SMS</label>
+                </fieldset>
+
+                <!-- 1 Checkbox (e.g., for agreeing to terms or selecting preferences) -->
+                <div>
+                    <label>
+                        <input type="checkbox" name="subscribe" value="yes"> Sign up for our
+                        newsletter
+                    </label>
+                </div>
+
+                <!-- 1 Textarea (e.g., for comments or messages) -->
+                <div>
+                    <label for="comments">Additional Comments:</label><br>
+                    <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+                </div>
+
             </form>
         </section>
 
@@ -79,14 +104,16 @@
 
     <footer>
         <p>©2026 🦄 Charles Chiparo 🦄 | Designed for WDD Web Fundamentals</p>
-        <div class="social-links">
-            <a href="https://facebook.com" target="_blank" rel="noopener"><img
-                  src="images/facebook.png" alt="Facebook icon"></a>
-            <a href="https://twitter.com" target="_blank" rel="noopener"><img
-                  src="images/twitter.png" alt="Twitter icon"></a>
-            <a href="https://instagram.com" target="_blank" rel="noopener"><img
-                  src="images/instagram.png" alt="Instagram icon"></a>
-        </div>
+        <class="social-links">
+            <nav>
+                <a href="https://facebook.com" target="_blank" rel="noopener"><img
+                      src="images/facebook.png" alt="Facebook icon"></a>
+                <a href="https://twitter.com" target="_blank" rel="noopener"><img
+                      src="images/twitter.png" alt="Twitter icon"></a>
+                <a href="https://instagram.com" target="_blank" rel="noopener"><img
+                      src="images/instagram.png" alt="Instagram icon"></a>
+            </nav>
+            </div>
     </footer>
 </body>
 
