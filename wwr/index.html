@@ -53,17 +53,18 @@
                 <!-- 3 Radio Buttons -->
                 <fieldset>
                     <legend>Select your preferred communication method:</legend>
-                    <label><input type="radio" name="contact" value="email"> Email</label>
-                    <label><input type="radio" name="contact" value="phone"> Phone</label>
-                    <label><input type="radio" name="contact" value="sms"> SMS</label>
+                    <label><input type="radio" id="contact-email" name="contact" value="email">
+                        Email</label>
+                    <label><input type="radio" id="contact-phone" name="contact" value="phone">
+                        Phone</label>
+                    <label><input type="radio" id="contact-sms" name="contact" value="sms">
+                        SMS</label>
                 </fieldset>
 
                 <!-- 1 Checkbox (e.g., for agreeing to terms or selecting preferences) -->
                 <div>
-                    <label>
-                        <input type="checkbox" name="subscribe" value="yes"> Sign up for our
-                        newsletter
-                    </label>
+                    <input type="checkbox" id="newsletter-sub" name="subscribe" value="yes">
+                    <label for="newsletter-sub">Sign up for our newsletter</label>
                 </div>
 
                 <!-- 1 Textarea (e.g., for comments or messages) -->
@@ -104,16 +105,15 @@
 
     <footer>
         <p>©2026 🦄 Charles Chiparo 🦄 | Designed for WDD Web Fundamentals</p>
-        <class="social-links">
-            <nav>
-                <a href="https://facebook.com" target="_blank" rel="noopener"><img
-                      src="images/facebook.png" alt="Facebook icon"></a>
-                <a href="https://twitter.com" target="_blank" rel="noopener"><img
-                      src="images/twitter.png" alt="Twitter icon"></a>
-                <a href="https://instagram.com" target="_blank" rel="noopener"><img
-                      src="images/instagram.png" alt="Instagram icon"></a>
-            </nav>
-            </div>
+        <nav class="social-links">
+            <a href="https://facebook.com" target="_blank" rel="noopener"><img
+                  src="images/facebook.png" alt="Facebook icon"></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener"><img
+                  src="images/twitter.png" alt="Twitter icon"></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener"><img
+                  src="images/instagram.jpg" alt="Instagram icon"></a>
+        </nav>
+        </div>
     </footer>
 </body>
 
