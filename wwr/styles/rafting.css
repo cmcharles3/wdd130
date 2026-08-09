@@ -71,7 +71,7 @@ nav a.active {
     width: 100%;
     height: 500px;
     object-fit: cover;
-    display: block;
+
 }
 
 .hero h1 {
@@ -135,6 +135,12 @@ nav a.active {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+}
+
+fieldset {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
 }
 
 .form-item {
@@ -289,7 +295,7 @@ footer {
     margin-top: 3rem;
 }
 
-.social-links img {
+.socialmedia img {
     width: 32px;
     height: 32px;
     margin-left: 0.8rem;
